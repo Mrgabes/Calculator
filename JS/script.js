@@ -2,42 +2,33 @@ function add(number1, number2) {
   return number1 + number2;
 }
 
-function sub(number1, number2) {
+function subtract(number1, number2) {
   return number1 - number2;
 }
 
-function div(number1, number2) {
-  return number1 / number2;
-}
-
-function mul(number1, number2) {
+function multiply(number1, number2) {
   return number1 * number2;
 }
 
-// const number1 = parseInt(prompt("Enter a number:"));
-// const number2 = parseInt(prompt("Enter another number:"));
-// const result = add(number1, number2);
-//  alert(add(50,10));
+function divide(number1, number2) {
+  return number1 / number2;
+}
 
-//  const number1 = parseInt(prompt("Enter a number:"));
-// const number2 = parseInt(prompt("Enter another number:"));
-// const result = sub(number1, number2);
-//  alert(sub(number1,number2));
+$(document).ready(function() {
+  $("form#add").submit(function(event) {
+    event.preventDefault();
+    const number1 = parseInt($("#add1").val());
+    const number2 = parseInt($("#add2").val());
+    const result = add(number1, number2);
+    $("#output").text(result);
+  });
+});
+// beverage below
+const beverage = $("#beverage").val();
 
- /*const number1 = parseInt(prompt("Enter a number:"));
- const number2 = parseInt(prompt("Enter another number:"));
- const result = div(number1, number2);
-  alert(div(number1,number2));*/
-
-  const number1 = parseInt(prompt("Enter a number:"));
- const number2 = parseInt(prompt("Enter another number:"));
- const result = mul(number1, number2);
-  alert(mul(number1,number2));
-
- 
-
-
-
-
-
-
+// Radio button
+const flavor = $("input:radio[name=flavor]:checked").val();
+// Date
+const dob = $("#born").val();
+// Color
+const favoriteColor = $("#color").val();

@@ -2,18 +2,69 @@
 <html lang="en-US">
 <head>
   <title>Calculator</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>Calculator</h1>
-
-
-
-
-
-
-
-
+    <div class="container">
+      <h1>Calculator</h1>
+      <form id="add">
+        <div class="form-group">
+          <label for="add1">1st number:</label>
+          <input id="add1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="add2">2nd number:</label>
+          <input id="add2" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Add!</button>
+      </form>
+      <div id="output">
   
+      </div>
+    </div>
+    <br>
+    <!--beverage below-->
+    <select class="form-control" id="beverage">
+      <option value="1">Coffee</option>
+      <option value="2">Tea</option>
+      <option value="3">Kombucha</option>
+      <option value="4">Water</option>
+    </select>
+    <!--Radio-->
+    <br>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="chocolate" checked>
+        Chocolate
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="vanilla">
+        Vanilla
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="cookiesandcream">
+        Cookies & Cream
+      </label>
+      <!--Date-->
+      <br>
+      <div class="form-group">
+        <label for="born">Date of birth:</label>
+        <input id="born" class="form-control" type="date">
+      </div>
+      <!--Color-->
+      <br>
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" class="form-control" type="color">
+      </div>
+    </div>
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

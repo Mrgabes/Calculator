@@ -7,24 +7,37 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="container">
-      <h1>Calculator</h1>
-      <form id="add">
-        <div class="form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Add!</button>
-      </form>
-      <div id="output">
-  
+  <div class="container">
+    <h1>Calculator</h1>
+    <form id="calc">
+      <div class="form-group">
+        <label for="num1">1st number:</label>
+        <input id="num1" class="form-control" type="text">
       </div>
+      <div class="form-group">
+        <label for="num2">2nd number:</label>
+        <input id="num2" class="form-control" type="text">
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <button type="submit" class="btn-primary add">Add</button>
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn-primary subtract">Subtract</button>
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn-primary multiply">Multiply</button>
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn-primary divide">Divide</button>
+        </div>
+      </div>
+    </form>
+    <div id="output">
     </div>
-    <br>
+  </div>
+<br>
+<br>
     <!--beverage below-->
     <select class="form-control" id="beverage">
       <option value="1">Coffee</option>
